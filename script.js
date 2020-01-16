@@ -1,7 +1,7 @@
 function init () {
   // La fonction résultat() est exécutée lors de la soumission du formulaire
   // Indiquer le nom du formilaire et l'évenement correspondant à sa soumission
-  document.getElementById("nom_du_formulaire")._evenement_soumission = resultat;
+  document.getElementById("terminale").sumbit = resultat;
 
   //Récupération des variables et de leurs valeurs dans l'URL :
   // ex : //formulaire.html?prenom=Albert&nom=Dupond&classe=1G2&LITT_ANGLAIS=LITT.+ANGLAIS&NUMERIQUE_SC_INFORM=NUMERIQUE+SC.INFORM

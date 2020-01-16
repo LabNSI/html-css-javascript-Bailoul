@@ -18,18 +18,24 @@ body {
     alignement du texte: centré
 */
 header {
+  background-color: black;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
 
 }
 
 /* Couleur du texte: Blanc */
 h1 {
+  color: white;
 
 }
 
 /* Style de la classe "choix"
 
 */
-_____ {
+.choix {
   float: left;
   width: 32.33%;
   margin: 0.5%;
@@ -53,7 +59,14 @@ _____ {
     couleur de fond: noir
 */
 .resultat {
-
+  float: left;
+  text-align: center;
+  width: 100%;    /*pas sur*/
+  margin: 0.5%;
+  padding: 10px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: black;
 }
 
 /* Clear floats after the columns */
@@ -90,6 +103,7 @@ _____ {
     couleur de fond : #bbb
 */
 #identity {
+  background-color: #bbb;
 
 }
 
@@ -97,6 +111,7 @@ _____ {
     couleur de fond : #bbb
 */
 #classe {
+  background-color: #bbb;
 
 }
 
@@ -104,5 +119,6 @@ _____ {
     couleur de fond : #ccc
 */
 #speciality {
+  background-color: #ccc;
 
 }
