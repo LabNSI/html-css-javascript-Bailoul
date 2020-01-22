@@ -1,4 +1,4 @@
---* {
+* {
   box-sizing: border-box;
 }
 
@@ -33,7 +33,6 @@ h1 {
 }
 
 /* Style de la classe "choix"
-
 */
 .choix {
   float: left;
@@ -103,7 +102,7 @@ h1 {
     couleur de fond : #bbb
 */
 #identity {
-  background-color: #bbb;
+  background-color: #007F00;
 
 }
 
