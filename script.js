@@ -39,14 +39,14 @@ function init () {
       // Sinon ajouter à mess "Mauvais choix !"
       if(aVar[3][0] == good || aVar[4][0] == good)
       {
-        mess += alert("Bon choix !");
+        mess += "Bon choix !";
       }
       else {
-        mess += alert("Mauvais choix !");
+        mess += "Mauvais choix !";
       }
 
       // Ajouter le code HTML mess à l'élément d'ID='resultat'
-      document.getElementById('').onload = resultat;
+      document.getElementById('resultat').innerHTML= mess;
   }
 }
 
@@ -60,12 +60,12 @@ function resultat() {
   var message = "Compléter les champs :";
 
   // Vérifier si le prénom a été saisie. Si non (chaine vide), ajouter "\n - Prénom" à message
-  if(f.elements["prenom"].value == "prenom")  {
+  if(f.elements["prenom"].value == "")  {
     message += "\n- Prénom";
   }
 
   // Vérifier si le nom a été saisie. Si non (chaine vide), ajouter "\n - Nom" à message
-  if(f.elements["nom"].value == "nom")  {
+  if(f.elements["nom"].value == "")  {
     message += "\n- Nom";
   }
 
@@ -90,22 +90,22 @@ function resultat() {
 
   // envoie une alerte si les spé ne sont pas choisies
   if(message != "Compléter les champs :"){
-    alert("Compléter les champs");
+    alert("message");
     // Mettre fin à lexécution de la fonction
-    return 0;
+    return "";
   }
 
   // Préparer le message à afficher
-  message = f.elements["prenom"].value + "Entrez votre prénom" +
-            f.elements["nom"].value + " Entrez votre nom de famille " +
+  message = f.elements["prenom"].value + " " +
+            f.elements["nom"].value + " de" +
             f.elements["classe"].value;
 
-  // ?
+  //  Vérifier si NUMERIQUE_SC_INFORM a été chosi si c'est le cas Tu fais le bon choix s'affiche sinon le message Es-tu sur de ton choix ? s'affiche
   if(f.elements["NUMERIQUE_SC_INFORM"].checked){
     message += "\nTu fais le bon choix !";
   }
   else {
-    message += "\nEs-tu sur de ton choix ?!";
+    message += "\nEs-tu sur de ton choix ? !";
   }
 
   alert(message);
